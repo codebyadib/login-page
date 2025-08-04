@@ -4,7 +4,7 @@ A simple and responsive **User Authentication** interface with **Login** and **S
 
 ---
 
-## ## 🌐 Live Demo
+## 🌐 Live Demo
 
 [👉 Click here to view the live project](https://codebyadib.github.io/login-page/)
 
