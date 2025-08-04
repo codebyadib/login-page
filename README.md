@@ -4,6 +4,12 @@ A simple and responsive **User Authentication** interface with **Login** and **S
 
 ---
 
+## 🔗 Live Demo
+
+[👉 Click here to view the live project](https://adibwebdev.github.io/user-authentication-page/)
+
+---
+
 ## 🚀 Features
 
 - 🔐 Login and Signup forms with smooth transitions
