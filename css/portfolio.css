@@ -1,0 +1,186 @@
+  
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      body {
+        background: #f9f9f9;
+        color: #333;
+      }
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+        background: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+      }
+      .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #222;
+      }
+      nav {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 2rem;
+      }
+      nav ul li a,
+      .mobile-logout {
+        text-decoration: none;
+        color: #444;
+        font-weight: 600;
+        font-size: 1rem;
+        padding: 0.3rem 0.5rem;
+        border-bottom: 2px solid transparent;
+        transition: all 0.3s ease;
+      }
+      nav ul li a:hover,
+      nav ul li a.active,
+      .mobile-logout:hover {
+        color: #000;
+        border-bottom-color: #007bff;
+        background: #f0f0f0;
+      }
+      .logout-btn {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        background: #efefef;
+        border: none;
+        padding: 8px 12px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: 600;
+        color: #333;
+        transition: background 0.3s ease;
+      }
+      .logout-btn:hover {
+        background: #ddd;
+      }
+      .hamburger {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+        gap: 5px;
+      }
+      .hamburger div {
+        width: 25px;
+        height: 3px;
+        background: #444;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+      }
+      
+      #closeBtn{
+        /* display: none; */
+        height: 20px;
+        width: 20px;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        /* padding: .5rem; */
+        border-radius: 50%;
+        display: none;
+        z-index: 999;
+        cursor: pointer;
+      }
+
+      .hero {
+        height: 100vh;
+        background: #e8f0fe;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        padding: 2rem;
+        overflow: hidden;
+      }
+
+      .hero-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("https://images.unsplash.com/photo-1421789665209-c9b2a435e3dc?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D");
+        background-size: cover;
+        background-position: center;
+        z-index: 0;
+      }
+
+      
+      .hero h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        
+      }
+      .hero p {
+        font-size: 1.2rem;
+        color: #555;
+      }
+
+      .hero h1,
+      .hero p {
+        z-index: 1;
+        position: relative;
+        color: rgb(255, 255, 255);
+      }
+
+
+      .close-menu {
+        display: none;
+      }
+      @media (max-width: 510px) {
+        nav ul {
+          position: fixed;
+          top: 0;
+          right: 0;
+          height: 100vh;
+          width: 250px;
+          background: #fff;
+          flex-direction: column;
+          padding-top: 5rem;
+          box-shadow: -3px 0 15px rgba(0, 0, 0, 0.2);
+          transform: translateX(100%);
+          opacity: 0;
+          pointer-events: none;
+          transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+        nav ul.open {
+          transform: translateX(0);
+          opacity: 1;
+          pointer-events: auto;
+        }
+        nav ul li {
+          width: 100%;
+        }
+        nav ul li a,
+        .mobile-logout {
+          display: block;
+          width: 100%;
+          padding: 1rem 1.5rem;
+          font-size: 1.1rem;
+          border-bottom: 1px solid #ddd;
+        }
+        .hamburger {
+          display: flex;
+        }
+        .logout-btn {
+          display: none;
+        }
+      }
+    

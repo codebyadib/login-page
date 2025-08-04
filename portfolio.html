@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  
+    <link rel="stylesheet" href="css/portfolio.css">
+  </head>
+  <body>
+    <header>
+      <div class="logo">MyPortfolio</div>
+      <nav>
+        <ul id="nav-links">
+          <li><a href="#" class="nav-link">Home</a></li>
+          <li><a href="#" class="nav-link">Peojects</a></li>
+          <li><a href="#" class="nav-link">Services</a></li>
+          <li><a href="#" class="nav-link">Contact</a></li>
+          <li class="mobile-logout" onclick="logout()" style="display: none">
+            <a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="logout-btn" onclick="logout()">
+        <i class="fas fa-sign-out-alt"></i> Logout
+      </button>
+      <div class="hamburger" id="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="close-btn" id="closeBtn" style="display: none;">✖</div>
+    </header>
+
+    <section class="hero">
+      <h1>Welcome to Demo Home Page</h1>
+      <p>This is the home section of my portfolio</p>
+      <div class="hero-bg"></div>
+    </section>
+
+  <script src="js/portfolio.js"></script>
+  </body>
+</html>

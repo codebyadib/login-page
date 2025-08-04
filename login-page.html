@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In | MyApp</title>
+    <!-- styles -->
+     <link rel="stylesheet" href="css/login-system.css">
+  </head>
+  <body>
+    <!-- popup -->
+    <div id="popup" style="display: none">
+      <div class="popup-content">
+        <p id="popup-message"></p>
+        <button onclick="closePopup()">OK</button>
+      </div>
+    </div>
+
+    <!-- Register UI -->
+    <div class="container" style="display: none" id="signUp-ui">
+      <div class="tabs">
+        <button class="signIn-btn">Sign In</button>
+        <button class="active signUp-btn">Sign Up</button>
+      </div>
+      <h2>Create an Account</h2>
+
+      <div class="input-group">
+        <label>Full Name</label>
+        <input type="text" placeholder="Your name" id="name" />
+      </div>
+
+      <div class="input-group">
+        <label>Email</label>
+        <input type="email" placeholder="Email address" class="email" />
+      </div>
+
+      <div class="input-group">
+        <label>Password</label>
+        <input
+          type="password"
+          class="password"
+          placeholder="Password"
+          minlength="6"
+        />
+      </div>
+
+      <div class="input-group">
+        <label>Confirm Password</label>
+        <input
+          type="password"
+          id="confirmPassword"
+          placeholder="Confirm password"
+        />
+      </div>
+
+      <button class="register-btn" id="register-btn" onclick="registerUser()">
+        Register
+      </button>
+
+      <div class="or">
+        <p>Or</p>
+        Sign Up with
+      </div>
+      <div class="social">
+        <div class="social-icon">G</div>
+        <div class="social-icon">f</div>
+        <div class="social-icon">🐦</div>
+      </div>
+    </div>
+
+    <!-- Login UI -->
+    <div class="container" id="signIn-ui">
+      <div class="tabs">
+        <button class="signIn-btn active">Sign In</button>
+        <button class="signUp-btn" id="signUp-btn">Sign Up</button>
+      </div>
+      <h2>Welcome Back</h2>
+
+      <div class="input-group">
+        <label>Email</label>
+        <input
+          type="email"
+          placeholder="Email address"
+          class="email"
+          id="login-email"
+        />
+      </div>
+
+      <div class="input-group">
+        <label>Password</label>
+        <input
+          type="password"
+          class="password"
+          id="login-password"
+          placeholder="Password"
+          minlength="6"
+        />
+      </div>
+
+      <div class="forgot-pass">
+        <a href="#" class="forgot-pass">Forgot password?</a>
+      </div>
+
+      <button class="login-btn" id="login-btn">Login</button>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/login.js"></script>
+  </body>
+</html>
