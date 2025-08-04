@@ -12,7 +12,7 @@
       });
 
       function logout() {
-        window.location.href = "login-page.html";
+        window.location.href = "index.html";
       }
 
       // Highlight active link
