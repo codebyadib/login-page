@@ -40,9 +40,9 @@ A simple and responsive **User Authentication** interface with **Login** and **S
 🙋‍♂️ Author: 
 Adib Hassan
 - 🌐 Portfolio: Not yet made 
-- 📧 Email: adibhassan.dev@gmail.com
+- 📧 Email: dev.codebyadib@gmail.com
 - 🔗 GitHub: https://github.com/codebyadib
 - LinkedIn: [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/adibwebdev/)
-- Facebook: https://www.facebook.com/codebyadib
+- Facebook: https://www.facebook.com/codebyadibdev
 
 
