@@ -213,3 +213,38 @@
       .popup-content button:hover {
         background: #a9b1c1;
       }
+
+/* Prevent button text from breaking into multiple lines */
+.register-btn,
+.login-btn,
+.tabs button {
+  white-space: nowrap;
+}
+
+/* Make form more responsive on small devices */
+@media (max-width: 480px) {
+  .container {
+    width: 95%;
+    padding: 1.2rem 1.4rem;
+  }
+
+  .tabs {
+    gap: 0.5rem;
+  }
+
+  .tabs button {
+    font-size: 1em;
+    padding: 0.6rem;
+  }
+
+  .register-btn,
+  .login-btn {
+    font-size: 1em;
+    padding: 0.7rem;
+  }
+
+  .input-group input {
+    padding: 0.8rem;
+    font-size: 14px;
+  }
+}
