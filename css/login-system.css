@@ -59,7 +59,7 @@
         background: #e0e5ec;
         box-shadow: inset 5px 5px 10px #bec3c9, inset -5px -5px 10px #ffffff;
         font-weight: 600;
-        font-size: 1.2em;
+        font-size: 1.2rem;
         cursor: pointer;
         transition: 0.3s;
       }
